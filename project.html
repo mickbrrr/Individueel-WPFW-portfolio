@@ -22,16 +22,45 @@
     <main>
         <section>
             <h2>Mijn projecten</h2>
-            
-            <button id="sorteer-knop">Sorteer op titel</button>
-            
-            <div id="projecten-lijst"></div>           
+
+            <p>
+                Hier vind je een aantal projecten waar ik tijdens mijn studie aan werk.
+            </p>
+
+            <div class="project-controls">
+
+    <div>
+        <label for="filter-vak">Filter op vak</label>
+        <select id="filter-vak">
+            <option value="alle">Alle projecten</option>
+            <option value="Database">Database</option>
+            <option value="Project">Project</option>
+            <option value="WPFW">WPFW</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="sorteer-titel">Sorteer op titel</label>
+        <select id="sorteer-titel">
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+        </select>
+    </div>
+
+</div>
+
+<p id="project-aantal"></p>
+
+<div id="projecten-lijst"></div>
+
+            <div id="projecten-lijst"></div>
         </section>
     </main>
 
     <footer>
         <p>Portfolio van Mick Rihen Brutus</p>
     </footer>
-<script src="JS/script.js"></script>
+
+    <script src="JS/script.js"></script>
 </body>
 </html>
