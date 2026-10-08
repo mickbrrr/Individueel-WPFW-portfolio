@@ -33,43 +33,6 @@ const projecten = [
     }
 ];
 
-function toonProjecten() {
-    const projectenLijst = document.querySelector("#projecten-lijst");
-
-    projectenLijst.innerHTML = "";
-
-    projecten.forEach((project) => {
-        const article = document.createElement("article");
-
-        const titel = document.createElement("h3");
-        titel.textContent = project.titel;
-        const informatie = document.createElement("p");
-informatie.textContent = `${project.vak} - ${project.jaar}`;
-
-const technieken = document.createElement("p");
-technieken.textContent = `Technieken: ${project.technieken}`;
-
-        const status = document.createElement("p");
-        status.textContent = project.status;
-
-        const beschrijving = document.createElement("p");
-        beschrijving.textContent = project.beschrijving;
-
-        article.appendChild(titel);
-        article.appendChild(informatie);
-        article.appendChild(status);
-        article.appendChild(beschrijving);
-        article.appendChild(technieken);
-
-        if (project.extraBeschrijving !== "") {
-            const extraBeschrijving = document.createElement("p");
-            extraBeschrijving.textContent = project.extraBeschrijving;
-            article.appendChild(extraBeschrijving);
-        }
-
-        projectenLijst.appendChild(article);
-    });
-}
 
 function toonProjecten(projectLijst) {
     const projectenLijst = document.querySelector("#projecten-lijst");

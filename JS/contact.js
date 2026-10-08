@@ -32,7 +32,7 @@ function valideerVeld(veld) {
     return geldig;
 }
 
-form.addEventListener("submit", (event) => {
+function verwerkFormulier(event) {
     event.preventDefault();
 
     const alleGeldig = velden
@@ -48,4 +48,6 @@ form.addEventListener("submit", (event) => {
 
     status.textContent = "Bericht verzonden! Bedankt.";
     form.reset();
-});
+}
+
+form.addEventListener("submit", verwerkFormulier);

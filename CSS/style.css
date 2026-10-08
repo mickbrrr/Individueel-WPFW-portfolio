@@ -103,3 +103,8 @@ footer {
 .project-controls div {
     margin-right: 20px;
 }
+
+.contact-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
