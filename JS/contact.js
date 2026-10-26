@@ -3,15 +3,15 @@ const form = document.querySelector("#contact-form");
 const velden = [
     {
         id: "naam",
-        boodschap: "Vul minimaal 2 tekens in."
+        boodschap: "Vul minimaal 2 tekens in!"
     },
     {
         id: "email",
-        boodschap: "Vul een geldig e-mailadres in."
+        boodschap: "Vul een geldig e-mailadres in!"
     },
     {
         id: "bericht",
-        boodschap: "Schrijf minimaal 10 tekens."
+        boodschap: "Schrijf minimaal 10 tekens!"
     }
 ];
 
@@ -42,12 +42,16 @@ function verwerkFormulier(event) {
     const status = document.querySelector("#form-status");
 
     if (!alleGeldig) {
-        status.textContent = "Er zijn nog fouten in het formulier.";
-        return;
-    }
+    status.textContent = "Er zijn nog fouten in het formulier.";
+    status.className = "error";
+    return;
+}
 
-    status.textContent = "Bericht verzonden! Bedankt.";
-    form.reset();
+status.textContent = "Formulier succesvol ingevuld!";
+status.className = "success";
+form.reset();
+    
+
 }
 
 form.addEventListener("submit", verwerkFormulier);

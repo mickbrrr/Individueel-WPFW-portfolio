@@ -1,0 +1,132 @@
+
+
+.blog-main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: white;
+}
+
+
+.blog-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+
+    background-color: white;
+    padding: 30px;
+}
+
+.blog-content {
+    min-width: 0;
+}
+
+
+.blog-article {
+    margin-bottom: 40px;
+}
+
+.blog-article h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.blog-article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+.blog-article video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    background-color: #333;
+}
+
+
+.blog-article a {
+    color: #08265c;
+    text-decoration: underline;
+}
+
+.blog-article a:hover {
+    color: #0056b3;
+}
+
+.blog-sidebar {
+    background-color: #08265c;
+    color: white;
+    padding: 25px;
+    min-width: 0;
+}
+
+
+.blog-sidebar h2 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+
+.weather-section {
+    background-color: white;
+    color: #222;
+    padding: 20px;
+}
+
+
+.weather-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+#weer-data {
+    line-height: 1.8;
+    overflow-wrap: break-word;
+}
+
+
+@media (max-width: 900px) {
+    .blog-layout {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .blog-sidebar {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .blog-main {
+        width: 95%;
+        padding: 15px 0;
+    }
+
+    .blog-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .blog-sidebar {
+        padding: 20px;
+    }
+
+    .blog-article {
+        margin-bottom: 30px;
+    }
+
+    .blog-article video {
+        width: 100%;
+    }
+}

@@ -1,14 +1,19 @@
 const weerData = document.querySelector("#weer-data");
 
 const url =
-    "https://api.open-meteo.com/v1/forecast?latitude=52.07&longitude=4.30&current=temperature_2m,wind_speed_10m&timezone=Europe%2FAmsterdam";
+    "https://api.open-meteo.com/v1/forecast?latitude=52.07&longitude=4.3&hourly=temperature_2m&current=temperature_2m,wind_speed_10m&timezone=auto";
 
 async function haalWeerOp() {
     weerData.textContent = "Weergegevens laden...";
 
     try {
         const response = await fetch(url);
-        const data = await response.json();
+
+if (!response.ok) {
+    throw new Error("Fout bij het ophalen van weergegevens.");
+}
+
+const data = await response.json();
 
         weerData.textContent = "";
 

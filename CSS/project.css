@@ -1,0 +1,48 @@
+
+
+#projecten-lijst {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+#projecten-lijst article {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 0;
+    padding: 20px;
+
+    border: 1px solid #cccccc;
+    border-left: 5px solid #042662;
+    background-color: white;
+}
+
+#projecten-lijst article h3 {
+    margin-top: 0;
+}
+
+
+.project-controls {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.project-controls div {
+    margin-right: 0;
+}
+
+
+@media (max-width: 700px) {
+    #projecten-lijst article {
+        flex-basis: 100%;
+    }
+
+    .project-controls {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

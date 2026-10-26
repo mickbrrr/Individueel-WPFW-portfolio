@@ -1,110 +1,105 @@
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    padding-top: 75px;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: white;
     color: #222;
 }
 
-header,
-main,
-footer {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-}
 
 header {
-    background-color: #042662;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 80%;
+    max-width: 1200px;
+    z-index: 1000;
+
+    background-color: #08265c;
     color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 30px;
+}
+
+
+.Naam {
+    text-align: left;
+}
+
+.Naam h4 {
+    margin: 0;
+}
+
+/* Navigation */
+.nav-container {
+    text-align: right;
 }
 
 nav {
-    display: flex;
+    margin: 0;
 }
 
 nav a {
     color: white;
-    margin-right: 10px;
 }
 
+
 main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
     background-color: white;
 }
 
-article {
-    margin-bottom: 30px;
+
+footer {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    background-color: #08265c;
+    color: white;
 }
+
 
 video {
     max-width: 100%;
     height: auto;
 }
 
-footer {
-    background-color: #042662;
-    color: white;
-}
 
-.profile-photo {
-    width: 200px;
-    max-width: 100%;
-    height: auto;
-}
+@media (max-width: 700px) {
+    body {
+        padding-top: 110px;
+    }
 
-#contact-form label {
-    display: block;
-    margin-top: 15px;
-}
+    header {
+        width: 95%;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
 
-#contact-form input,
-#contact-form textarea {
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin-top: 5px;
-}
+    main {
+        width: 95%;
+        padding: 15px 0;
+    }
 
-#contact-form textarea {
-    min-height: 120px;
-}
-
-#projecten-lijst {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-#projecten-lijst article {
-    width: 45%;
-    padding: 20px;
-    border: 1px solid #cccccc;
-    border-left: 5px solid #042662;
-    background-color: white;
-}
-
-#projecten-lijst article h3 {
-    margin-top: 0;
-}
-
-
-.project-controls {
-    display: flex;
-    align-items: flex-end;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.project-controls div {
-    margin-right: 20px;
-}
-
-.contact-container {
-    max-width: 500px;
-    margin: 0 auto;
+    footer {
+        width: 95%;
+    }
 }

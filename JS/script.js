@@ -1,6 +1,6 @@
 const projecten = [
     {
-        titel: "Campus EventDesk - Klassendiagram",
+        titel: "Database-Campus EventDesk",
         vak: "Database",
         jaar: "2026",
         technieken: "UML, databases en modelleren",
@@ -10,7 +10,7 @@ const projecten = [
         extraBeschrijving: ""
     },
     {
-        titel: "GameFlow / ParkDirector - Groepsproject",
+        titel: "GameFlow / ParkDirector",
         vak: "Project",
         jaar: "2026",
         technieken: "Samenwerken, planning en serious game",
@@ -21,7 +21,7 @@ const projecten = [
             "We zijn onlangs met het project begonnen en werken momenteel aan onze teamafspraken, planning, taakverdeling en projectaanpak."
     },
     {
-        titel: "Mijn WPFW Portfolio",
+        titel: "Website-Portfolio",
         vak: "WPFW",
         jaar: "2026",
         technieken: "HTML, CSS en JavaScript",
@@ -30,6 +30,17 @@ const projecten = [
             "Voor WPFW bouw ik mijn persoonlijke portfolio. Ik heb de website opgebouwd met HTML en CSS en later JavaScript toegevoegd voor dynamische inhoud, formuliervalidatie en externe data.",
         extraBeschrijving:
             "Met dit portfolio laat ik mijn projecten en mijn ontwikkeling als Software Engineering-student zien."
+    },
+    {
+        titel: "PD Portfolio",
+        vak: "PD",
+        jaar: "2026",
+        technieken: "self Analyse en reflectie",
+        status: "Werk in uitvoering.",
+        beschrijving:
+            "Voor PD bouw ik mijn persoonlijke portfolio. Ik heb de portfolio document gemaak en daar in tijd besteding van de taken in er in geschreven.",
+        extraBeschrijving:
+            "Met dit portfolio laat ik mijn projecten en mijn ontwikkeling zien."
     }
 ];
 

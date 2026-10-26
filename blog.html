@@ -1,45 +1,88 @@
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/blog.css">
+
     <title>Blog</title>
 </head>
 
 <body>
 
     <header>
-        <h1>Blog</h1>
+        <div class="Naam">
+            <h4>MICK RIHEN BRUTUS</h4>
+        </div>
 
-        <nav>
-            <a href="whoami.html">Wie ben ik</a> |
-            <a href="project.html">Projecten</a> |
-            <a href="blog.html">Blog</a>
-        </nav>
+        <div class="nav-container">
+            <nav>
+                <a href="whoami.html">Wie ben ik</a> |
+                <a href="project.html">Projecten</a> |
+                <a href="blog.html">Blog</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <article>
-            <h2>Fireship-video</h2>
+    <main class="blog-main">
 
-            <p>Dit is een eenvoudige blogpost over de Fireship-video.</p>
+        <div class="blog-layout">
 
-            <video width="340" height="280" controls>
-                <source src="Videos/video2.mp4" type="video/mp4">
-                Je browser ondersteunt het video-element niet.
-            </video>
+            <!-- Left side -->
+            <div class="blog-content">
 
-            <p>
-                <a href="https://youtu.be/UuqSy1jPSUw?si=Bi2pwJlYKBpnXhsl">
-                    Fireship-video
-                </a>
-            </p>
-        </article>
-        <section>
-    <h2>Actueel weer in Den Haag</h2>
-    <div id="weer-data">Weergegevens laden...</div>
-</section>
+                <article class="blog-article">
+                    <h2>Fireship-video</h2>
+
+                    <video controls>
+                        <source src="Videos/video2.mp4"
+                                type="video/mp4">
+                        Je browser ondersteunt het video-element niet.
+                    </video>
+
+                    <p>
+                        Dit is een eenvoudige blogpost
+                        over de Fireship-video.
+                    </p>
+
+                    <p>
+                        <a href="https://youtu.be/UuqSy1jPSUw?si=Bi2pwJlYKBpnXhsl">
+                            Bekijk fireship-video
+                        </a>
+                    </p>
+                </article>
+
+                <article class="blog-article">
+                    <h2>Belangrijke informatie</h2>
+
+                    <p>
+                        Hier kan ik meer delen over programmeren,
+                        softwareontwikkeling en mijn projecten.
+                    </p>
+                </article>
+
+            </div>
+
+            <!-- Right side -->
+            <aside class="blog-sidebar">
+
+                <h2>Meer informatie </h2>
+
+                <section class="weather-section">
+                    <h3>Actueel weer in Den Haag</h3>
+
+                    <div id="weer-data">
+                        Weergegevens laden...
+                    </div>
+                </section>
+
+            </aside>
+
+        </div>
+
     </main>
 
     <footer>
