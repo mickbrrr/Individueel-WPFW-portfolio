@@ -1,0 +1,13 @@
+# .NET build files
+**/bin/
+**/obj/
+
+# Visual Studio user settings
+*.user
+*.suo
+
+# VS Code local settings
+.vscode/
+
+# Local development files
+*.log

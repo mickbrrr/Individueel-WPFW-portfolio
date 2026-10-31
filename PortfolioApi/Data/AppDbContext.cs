@@ -1,5 +1,5 @@
-
 using Microsoft.EntityFrameworkCore;
+using PortfolioApi.Models;
 
 namespace PortfolioApi.Data;
 
@@ -9,4 +9,7 @@ public class AppDbContext : DbContext
         : base(options)
     {
     }
+
+    public DbSet<Project> Projects { get; set; }
+    public DbSet<BlogPost> BlogPosts { get; set; }
 }
